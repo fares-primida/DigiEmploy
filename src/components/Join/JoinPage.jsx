@@ -1,5 +1,5 @@
     import React from "react";
-    import { Box, Typography, useTheme  , Button} from "@mui/material";
+    import { Box, Typography, useTheme } from "@mui/material";
     import InputBase from "@mui/material/InputBase";
     import { Token } from "../../Theme.js";
     import {Container} from './JoinPageElements'
@@ -33,7 +33,6 @@
             }}
             placeholder="email..."
         />
-        <Button variant='contained' sx={{height: '40px' , borderRadius: '0 7px 7px 0'}} size='small'>Start</Button>
         </Box>
         </Box>
         {/* IMAGE */}
