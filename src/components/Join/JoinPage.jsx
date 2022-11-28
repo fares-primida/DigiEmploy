@@ -1,13 +1,20 @@
     import React from "react";
+    import styled from "styled-components";
     import { Box, Typography, useTheme, Button } from "@mui/material";
     import InputBase from "@mui/material/InputBase";
     import { Token } from "../../Theme.js";
-    import { Container } from "./JoinPageElements";
     import Person from "../../assets/images/pngwing.com.png";
 
     const JoinPage = () => {
+    // Styled Components (Start)
+    const Container = styled.div`
+    width: 100%;
+    height: 100%;
+    `;
+    // Styled Components (End)
     const theme = useTheme();
     const colors = Token(theme.palette.mode);
+
     return (
     <Container>
         {/* SIGN IN FORM */}
@@ -45,6 +52,7 @@
                 backgroundColor: `${colors.greenAccent[500]}`,
             }}
             variant="contained"
+            onClick={() => window.open("/MainPage")}
             >
             Start Now
             </Button>
