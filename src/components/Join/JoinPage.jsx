@@ -3,6 +3,7 @@
     import InputBase from "@mui/material/InputBase";
     import { Token } from "../../Theme.js";
     import {Container} from './JoinPageElements'
+    import Person from '../../assets/images/pngwing.com.png'
 
     const JoinPage = () => {
     const theme = useTheme();
@@ -36,7 +37,9 @@
         </Box>
         </Box>
         {/* IMAGE */}
-        <Box></Box>
+        <Box position='absolute' right='2%' top='5%' transform='translate(-50% , -50%)'>
+            <img height='90%' src={Person} alt='joinlogo'/>
+        </Box>
         </Container>
     );
     };
