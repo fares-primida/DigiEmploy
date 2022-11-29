@@ -41,6 +41,8 @@
                 flex: "2",
             }}
             placeholder="...@gmail.com"
+            type='email'
+            required
             />
             <Button
             sx={{
