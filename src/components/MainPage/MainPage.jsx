@@ -1,9 +1,10 @@
 import React from 'react'
+import Sidebar from '../Sidebar/Sidebar'
 
 const MainPage = () => {
     return (
     <div>
-        MainPage
+        <Sidebar />
     </div>
     )
 }

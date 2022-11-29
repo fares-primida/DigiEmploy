@@ -4,6 +4,7 @@
     import InputBase from "@mui/material/InputBase";
     import { Token } from "../../Theme.js";
     import Person from "../../assets/images/pngwing.com.png";
+    import {Link} from 'react-router-dom'
 
     const JoinPage = () => {
     // Styled Components (Start)
@@ -14,6 +15,7 @@
     // Styled Components (End)
     const theme = useTheme();
     const colors = Token(theme.palette.mode);
+
 
     return (
     <Container>
@@ -54,9 +56,10 @@
                 backgroundColor: `${colors.greenAccent[500]}`,
             }}
             variant="contained"
-            onClick={() => window.open("/MainPage")}
             >
-            Start Now
+                <Link to='/MainPage'>
+                    Start Now
+                </Link>
             </Button>
         </Box>
         </Box>
